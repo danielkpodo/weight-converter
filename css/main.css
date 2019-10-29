@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  background: #17223b;
+  color: #fff;
+  padding: 0 1rem;
+}
+#wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.app-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: goldenrod;
+  font-family: Roboto, sans-serif;
+  text-shadow: 1px 1px 1px #323322;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+input {
+  width: 90%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  outline: none;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  background: #eee;
+}
+
+.input:focus {
+  font-weight: bolder;
+}
+
+.results {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.results div:nth-child(1) {
+  background: #007bff;
+}
+
+.results div:nth-child(2) {
+  background: #28a745;
+}
+
+.results div:nth-child(3) {
+  background: #dc3545;
+}
+
+.values {
+  background: red;
+  margin-bottom: 0.3125rem;
+  padding: 0.725rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .app-container h1 {
+    font-size: 2rem;
+  }
+
+  .input {
+    width: 200px;
+    color: red;
+  }
+}
+
+::placeholder {
+  opacity: 0.5;
+}
